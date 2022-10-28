@@ -1,0 +1,50 @@
+body{
+    background-color: darkgoldenrod;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height: 100vh;
+}
+
+.FirstHeading{
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom:0px;
+}
+
+.SecondHeading{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding-bottom:5px;
+    padding-top: 2px;
+}
+
+.countdown{
+    padding: 15px;
+    font-size: 25px;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px;
+    width: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 7px;
+    margin: 10px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.Start{
+    padding-right: 15px;
+}
+
+
