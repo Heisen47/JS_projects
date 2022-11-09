@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    background-color: darksalmon;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.textBox{
+    padding: 10px;
+    margin: 2px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
+}
+
+.input{
+    padding: 10px;
+    margin: 8px;
+}
+
+.rock{
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #000;
+    color: aliceblue;
+}
+.paper{
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #000;
+    color: aliceblue;
+}
+.scissor{
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #000;
+    color: aliceblue;
+}
+
+button:hover{
+    color: #000;
+    background-color: aliceblue; 
+}
