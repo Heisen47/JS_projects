@@ -1,12 +1,22 @@
-let rock = document.querySelector('.rock');
-let paper = document.querySelector('.paper');
-let scissors = document.querySelector('.scissors');
-let textBox = document.querySelector('.textBox')
+let ROCK = document.querySelector('.rock');
+let PAPER = document.querySelector('.paper');
+let SCISSORS = document.querySelector('.scissor');
 
-// let rock_event = rock.addEventListener('click',(e)=>{
-//   let print =console.log('Pressed rock!');
-//   e.target.innerText =textBox;
-// })
+
+ROCK.addEventListener("click",()=>{
+  alert('You chose Rock!');
+  playRound('ROCK',getComputerChoice());
+})
+
+PAPER.addEventListener("click",()=>{
+  alert('You chose paper!');
+  playRound('PAPER',getComputerChoice())
+})
+
+SCISSORS.addEventListener("click",()=>{
+  alert('You chose scissors!');
+  playRound('SCISSORS',getComputerChoice())
+})
 
 
 //A function to generate random ROCK , Paper , Scissor
@@ -28,35 +38,37 @@ function getComputerChoice() {
 //This is where the magic is made , here we are taking inputs from user and parsing them with the random values of the previous function so with the rules after that we can get the winner
 
 function playRound(playerSelection, computerSelection) {
-  let user = prompt("What's the choice?");
-  playerSelection = user.toUpperCase();
-  if (playerSelection === 'ROCK' || 'PAPER' || 'SCISSORS') {
-    console.log("Your choice is :" + playerSelection);
+  // let user = prompt("What's the choice?");
+  // playerSelection = user.toUpperCase();
+  if ((playerSelection === 'ROCK') ||
+    (playerSelection === 'SCISSORS') ||
+    (playerSelection === 'PAPER')) {
+    // console.log("Your choice is :" + playerSelection);
     computerSelection = getComputerChoice();
-    console.log("computer choice is :" + computerSelection);
+    // console.log("computer choice is :" + computerSelection);
 
     if (playerSelection === computerSelection) {
-      return 'tie'
+      alert('WoW! you and computer chose the same thing') ;
     }
     if (
       (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') ||
       (playerSelection === 'SCISSORS' && computerSelection === 'PAPER') ||
       (playerSelection === 'PAPER' && computerSelection === 'ROCK')
     ) {
-      return 'Player Wins!!'
+      alert('Player Wins!!');
     }
     if (
       (computerSelection === 'ROCK' && playerSelection === 'SCISSORS') ||
       (computerSelection === 'SCISSORS' && playerSelection === 'PAPER') ||
       (computerSelection === 'PAPER' && playerSelection === 'ROCK')
     ) {
-      return "Computer Wins!!"
+      alert("Computer Wins!!")
     }
   }
-  else {
-    alert = playerSelection.alert('Please select "rock" or "paper" or "scissors"');
-    return alert;
-  }
+  // else {
+  //   alert = playerSelection.alert('Please select "rock" or "paper" or "scissors"');
+  //   return alert;
+  // }
 }
 
 // function game(){
@@ -66,4 +78,6 @@ function playRound(playerSelection, computerSelection) {
 //   }
 // }
 
+// function RockSelect(){
 
+// }
