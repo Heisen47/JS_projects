@@ -12,7 +12,7 @@ buttons.map( button => {
                 try{
                     display.innerText = eval(display.innerText.replace(/[^-+/*\d]/g, ''));
                 } catch {
-                    display.prompt("Please enter a number then use the operator! Error");
+                    display.innerText = "Please enter a number then use the operator! Error"
                 }
                 break;
             case '←':
