@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Modal</title>
+</head>
+
+<body>
+    <nav class="bg-gray-800 py-8">
+        <div class="mx-auto px-4">
+            <div class="flex justify-between ">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-book text-2xl" style="color: #ffffff;" alt="A book icon"></i>
+                    <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium">The Odin
+                        Library</a>
+
+                </div>
+                <div class="flex">
+                    <a href="#"
+                        class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sign
+                        up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="details">
+        <div class="Name">
+            <span>Name:</span>
+            <span id="OutputName"></span>
+        </div>
+        <div class="Author">
+            <span>Author :</span>
+            <span id="OutputAuthor"></span>
+        </div>
+        <div class="Pages">
+            <span> Number of pages :</span>
+            <span id="OutputPage"></span>
+        </div>
+        <div class="Read">
+            <span> I have read the book :</span>
+            <span id="OutputRead"></span>
+        </div>
+    </div>
+
+    <div class="TheBtn">
+        <button class="btn"><i class="fa-solid fa-plus px-2"></i>New Book</button>
+
+    </div>
+    <div class="modal">
+        <div class="modalContent">
+            <input type="text" placeholder="Name of the book" id="BookName" required>
+            <input type="text" placeholder="Author" id="Author" required>
+            <input type="number" placeholder="Number of pages" id="pages" required>
+            <br>
+            <div class="checking">
+                <label for="Read">Have you read the book?</label>
+                <select name="Read" id="checkbox">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Yes" selected id="yes">Yes</option>
+                    <option value="No" id="no">No</option>
+                </select>
+            </div>
+        </div>
+        <div class="modalBtn">
+            <button class="Add">Add</button>
+            <button class="Cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

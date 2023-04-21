@@ -1,0 +1,126 @@
+.TheBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+
+
+.btn{
+    background-color: orange;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.modal {
+    height: 300px;
+    width: 600px;
+    max-width: 80%;
+    border: 1px solid black;
+    padding: 8px;
+    margin-top: 15px;
+    box-shadow: 2px;
+    overflow: auto;
+    z-index: 10;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 2px;
+}
+
+
+
+.btn:hover{
+    background: #ed6666;
+}
+
+.Add:hover{
+    background: #ed6666;
+}
+.Cancel:hover{
+    background: #ed6666;
+}
+
+.Add{
+    cursor: pointer;
+    margin-top:15%;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    font-size: large;
+}
+
+.Cancel{
+    cursor: pointer;
+    font-size: large;
+    margin-top: 15%;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+}
+
+
+.modalBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 15px;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+
+}
+
+
+#BookName{
+    padding: 2px;
+    margin: 5px ;
+    margin-top: 10px;
+    border: 1px gray;
+}
+
+#Author{
+    padding: 2px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#pages{
+    padding: 2px;
+    margin: 5px ;
+    margin-top: 10px;
+}
+
+.details{
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 340px;
+    height: 130px;
+    margin-left: 2px;
+    padding: 15px;
+}
+
+#checkbox{
+    height: 25px;
+    width: 255px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
